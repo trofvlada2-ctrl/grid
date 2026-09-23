@@ -1,0 +1,25 @@
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.flex-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-cards > div {
+  flex: 1 1 150px;
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+  height: 100px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
