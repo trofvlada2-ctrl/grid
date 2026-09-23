@@ -1,0 +1,58 @@
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-auto-flow: dense;
+  gap: 15px;
+}
+
+.gallery-grid .big-1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-grid .big-2 {
+  grid-column: span 2;
+}
+
+.f-about {
+  grid-area: about;
+}
+.f-links {
+  grid-area: links;
+}
+.f-services {
+  grid-area: services;
+}
+.f-contact {
+  grid-area: contact;
+}
+
+footer {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "about links services contact";
+}
+
+@media (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "about"
+      "links"
+      "services"
+      "contact";
+  }
+}
